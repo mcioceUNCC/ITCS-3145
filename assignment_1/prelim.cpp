@@ -13,5 +13,6 @@ int main () {
    char name[HOST_NAME_MAX];
    int success = gethostname(name,HOST_NAME_MAX); //if 0 - success, else failed
    std::cout << name << std::endl;
+   std::cout<< "help me obi wan kenobi, you're my only hope" << std::endl;
    return 0;
 }
