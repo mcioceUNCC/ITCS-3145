@@ -16,13 +16,18 @@ float f4(float x, int intensity);
 }
 #endif
 
-  
+
 int main (int argc, char* argv[]) {
 
-  if (argc < 6) {
+  if (argc >= 6) {
     std::cerr<<"usage: "<<argv[0]<<" <functionid> <a> <b> <n> <intensity>"<<std::endl;
     return -1;
   }
-  
+  int functionID = argv[0];
+  float a = argv[1];
+  float b = argv[2];
+  int intensity = argv[4];
+
+
   return 0;
 }
